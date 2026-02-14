@@ -1,0 +1,27 @@
+{
+  "Ligne 13": [
+    {"name": "CARSPACH - Rond-point Sonnenberg", "lat": 47.6134323, "lon": 7.2130108, "time": "15:30"},
+    {"name": "ALTKIRCH - Piscine", "lat": 47.6225998, "lon": 7.2321913, "time": "15:35"}
+  ],
+    {"name": "ALTKIRCH - Gare", "lat": 47.6268557, "lon": 7.2393296, "time": "15:40"}
+  ],
+    {"name": "WALHEIM-Eglise", "lat": 47.6427902, "lon": 7.264503, "time": "15:45"}
+  ],
+    {"name": "ILLFURTH-Fédélé", "lat": 47.6651559, "lon": 7.2655127, "time": "15:55"}
+  ],
+    {"name": "ILLFURTH-Collège", "lat": 47.67848997, "lon": 7.2569699, "time": "16:00"}
+  ],
+    {"name": "FROENINGEN - Moulin", "lat": 47.6886463, "lon": 7.2683158, "time": "16:05"}
+  ],
+    {"name": "HOCHSTATT-Clées d'Argent", "lat": 47.7003465, "lon": 7.2791815, "time": "16:08"}
+  ],
+    {"name": "MORSCHWILLER-LE-BAS-Carrefour", "lat": 47.7387861, "lon": 7.2910276, "time": "16:16"}
+  ],
+
+
+   
+  "Ligne 202": [
+    {"name": "Aéroport", "lat": 49.0097, "lon": 2.5479, "time": "08:00"},
+    {"name": "Centre Commercial", "lat": 48.9870, "lon": 2.5120, "time": "08:15"}
+  ]
+}
