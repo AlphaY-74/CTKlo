@@ -6,7 +6,7 @@ class BusTracker(BoxLayout):
     # ... (garder le code précédent) ...
 
     def ajouter_arret_manuel(self, nom, heure):
-        """ Ajoute un arrêt avec la position GPS actuelle """
+        """ Ajoute un arrêt avec la position GPS actuelle """ 
         nouvel_arret = {
             "name": nom,
             "lat": self.current_lat,
@@ -46,4 +46,5 @@ class BusTracker(BoxLayout):
         layout.add_widget(nom_input)
         layout.add_widget(heure_input)
         layout.add_widget(btn_valider)
+
         popup.open()
