@@ -1,5 +1,8 @@
 name: Android Build
-on: [push, pull_request]
+on: 
+  workflow_dispatch: # Permet de lancer manuellement
+  push:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -7,15 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get Date
+        id: get-date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
       - name: Build with Buildozer
-        uses: Enenkel/buildozer-action@v0.0.1
+        uses: Niklas-97/buildozer-action@v1.4
         with:
-          buildozer_version: master
           command: buildozer android debug
-          repository_read_token: ${{ secrets.GITHUB_TOKEN }}
+          buildozer_version: master
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: MonAppBus-APK
+          name: CTKlo-APK-${{ steps.get-date.outputs.date }}
           path: bin/*.apk
